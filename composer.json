@@ -1,0 +1,35 @@
+{
+    "name": "tiktok-api/profile",
+    "description": "A simple and lightweight PHP API to fetch TikTok user profile information",
+    "type": "project",
+    "keywords": ["tiktok", "api", "profile", "scraper", "php"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "TikTok API Contributors"
+        }
+    ],
+    "require": {
+        "php": ">=8.0",
+        "ext-curl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*"
+    },
+    "autoload": {
+        "psr-4": {
+            "TikTokApi\\Classes\\": "src/Classes/"
+        },
+        "files": [
+            "src/Functions/utils.php"
+        ]
+    },
+    "config": {
+        "optimize-autoloader": true,
+        "sort-packages": true
+    },
+    "scripts": {
+        "post-install-cmd": [
+            "@php -r \"if (!file_exists('config/settings.php')) { copy('config/settings.example.php', 'config/settings.php'); echo 'Created config/settings.php from example\\n'; }\""
+        ]
+    }
+}

@@ -1,0 +1,39 @@
+# IDEs and Editors
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# OS Files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Cache and Temp Files
+/cache/
+*.cache
+*.tmp
+
+# Config Files (keep example files only)
+/config/settings.php
+
+# Logs
+*.log
+error.log
+debug.log
+
+# Environment
+.env
+.env.local
+
+# Composer
+/vendor/
+composer.lock
+
+# Temporary backup files
+*.bak
+*.swp
+*~
+
+# Rate Limit and Cache directories (created at runtime)
+/tmp/
